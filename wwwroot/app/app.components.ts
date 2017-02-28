@@ -4,8 +4,8 @@ import {Component} from "@angular/core";
 
     selector: "fisher-insurance",
 
-    template: `<home-page>`
+    template: `./app/app.Component.html`
 
 })
 
-export class AppComponent { }
+export class AppComponent{ }
