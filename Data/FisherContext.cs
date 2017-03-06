@@ -12,7 +12,10 @@ namespace FisherInsuranceApi.Data
             string connection = "User ID=fisher-user;Password=12dwight ;Host=localhost;Port=5432;Database=fisher-insurance;Pooling=true;";
             
             optionsBuilder.UseNpgsql(connection);
-}
+            }
+        public DbSet<Quote> Quotes { get; set; }
+        
+
 
 
     }
