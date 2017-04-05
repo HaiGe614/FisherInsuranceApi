@@ -27,8 +27,11 @@
                         <span class='glyphicon glyphicon-list-alt'></span> Claims
                     </a>
                 </li>
+
                 <li *ngIf="!authService.isLoggedIn()" [class.active]="isActive(['login'])">
-                    <a class="login" [routerLink]="['login']">Login</a>
+                    <a class="login" [routerLink]="['login']">
+                        <span class='glyphicon glyphicon-log-in'></span> Login
+                    </a>
                 </li>
                 <li *ngIf="authService.isLoggedIn()">
                     <a class="logout" href="javascript:void(0)" (click)="logout()">Logout</a>

@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { Http, Headers } from '@angular/http';
 
 @Injectable()
 export class AuthHttp {
-    Http = null;
+    http = null;
     authKey = "auth";
 
-    constructor(private http: AuthHttp)  {
+    constructor(http: Http) {
         this.http = http;
     }
 

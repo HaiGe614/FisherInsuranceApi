@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import 'rxjs/Rx';
+
 import { AppComponent } from './app.components';
 import { HomeComponent } from './components/home/home.components';
 import { NavBarComponent } from './components/navbar/navbar.components';
@@ -35,10 +36,8 @@ import { AuthHttp } from "./auth.http";
     ],
     providers: [
         AuthService,
-        AuthHttp,
-        AuthService
-],
-    
+        AuthHttp
+    ],
     bootstrap: [
         AppComponent
     ],
